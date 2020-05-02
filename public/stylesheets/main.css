@@ -1,0 +1,39 @@
+.thumbnail img{
+	
+	width:100%;
+}
+#jj{
+	padding:0;
+}
+.thumbnail .caption-full
+{
+	padding: 10px;
+}
+#ii{
+	width:100%;
+}
+#delete-form
+{
+	display:inline;
+}
+#aaa{
+	font-size:20px;
+}
+#www
+{
+	text-decoration:underline;
+}
+#kk{
+	display:inline;
+}
+#size{
+	font-size:20px;
+}
+#loginpage{
+ background-image: url(https://wallpaperaccess.com/full/181060.jpg);
+	z-index :0;
+}
+
+.checked {
+    color: orange;
+}

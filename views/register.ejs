@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Register</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/register.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <body>
+		
+				
+<nav class="navbar navbar-inverse " >
+	<!-- navbar-fixed-top ---- for keepig the navbar fixed -->
+	<!-- I can write navbar navbar-inverse to get a inbuilt blueish background -->
+<div class="container">
+	     <div class="navbar-header">
+		 <a href="/" class="navbar-brand"><span class="glyphicon glyphicon-picture" ></span>YelpCamp</a>
+         </div>
+         <div >
+            <div class="collapse navbar-collapse">
+			    <ul class=" nav navbar-nav navbar-right">
+				<%if(!currentUser){%>
+				<li><a href="/login">Login</a></li>
+				<li><a href="/register">Signup</a></li>
+				<%}else{%>
+				<li><a href="">Signed In As :<%=currentUser.username%></a></li>
+				<li><a href="/logout">Logout</a></li>
+				<%}%>
+			    </ul>
+		    </div>
+        </div>
+    </div> 
+</nav>
+		<div class="container">
+			<%if(error&&error.length>0){%>
+			<div class="alert alert-danger" role="alert"><%=error%></div>
+			<%}%>
+		<%if(success&&success.length>0){%>
+			<div class="alert alert-success" role="alert"><%=success%></div>
+			<%}%>
+		</div>
+		
+		
+<div id="landing-header"class="container">
+	   <div class="row">
+<div id="register">
+	<h1>
+		You don't have an account.Please sign up for free!!!
+	</h1>
+		   </div>
+                 
+		    <div style="width: 30%; margin:25px auto;">
+				<form action="/register" method="POST">
+					<div class="form-group">
+						<input class="form-control" type="text" name="username" placeholder="username">
+					</div>
+	                <div class="form-group">
+					  <input class="form-control" type="password" name="password" placeholder="password">
+					</div>
+	                <div class="form-group">
+				        <button  class="btn btn-success btn-lg ">Submit</button>
+					 </div>
+                 </form>
+                  
+		     </div>
+                  
+	  </div>
+</div>
+		
+		
+<%- include("./partials/footer") %>

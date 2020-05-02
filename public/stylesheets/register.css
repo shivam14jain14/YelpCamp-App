@@ -1,0 +1,21 @@
+body{
+	  background-image: url( http://i.imgur.com/SBEmFpv.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	z-index:0;
+
+}
+#landing-header{
+	z-index:1;
+	/*FOR Z-INDEX TO GET IMPLEMENTED WE NEED TO CHANGE THE POSITION FROM STATIC TO RELATIVE*/
+	position:relative;
+	text-align:center;
+	color:white;
+	font-size:50px;
+	/* vh - is the view height*/
+	padding-top:30vh;
+}
+
+#register{
+	font-size:40px;
+}

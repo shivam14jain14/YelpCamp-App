@@ -1,0 +1,15 @@
+body{
+	  background-image: url(https://wallpaperaccess.com/full/181060.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	z-index:-1;
+
+}
+#landing-header{
+	z-index:1;
+	/*FOR Z-INDEX TO GET IMPLEMENTED WE NEED TO CHANGE THE POSITION FROM STATIC TO RELATIVE*/
+	position:relative;
+	text-align:center;
+	/* vh - is the view height*/
+	padding-top:30vh;
+}
