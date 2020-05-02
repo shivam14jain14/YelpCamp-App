@@ -21,9 +21,13 @@ var commentRoutes    =require("./routes/comments"),
 ///index here is for auth routes 
 
 
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_review_system";
-mongoose.connect(url);
+
+
+/*var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_review_system";
+mongoose.connect(url);*/
 //mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser:true});
+
+mongoose.connect("mongodb+srv://shivam:shivam14@cluster0-9fk5n.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser:true});
 
 
 
