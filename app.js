@@ -20,11 +20,17 @@ var commentRoutes    =require("./routes/comments"),
 	indexRoutes       =require("./routes/index")
 ///index here is for auth routes 
 
-///first create an env var by - export DATABASEURL= mongodb://localhost/yelp_camp_review_system
 
-/*var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_review_system";
-mongoose.connect(url);*/
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser:true});
+
+///first create an environment  variable by - export DATABASEURL= mongodb://localhost/yelp_camp_review_system
+
+
+
+
+
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_review_system";
+mongoose.connect(url);
+//mongoose.connect(process.env.DATABASEURL, {useNewUrlParser:true});
 
 
 // update this on heroku
